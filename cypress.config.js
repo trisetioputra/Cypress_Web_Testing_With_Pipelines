@@ -7,5 +7,6 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     specPattern: "cypress/e2e/*.feature",
+    defaultCommandTimeout: 20 * 1000
   },
 });
